@@ -9,6 +9,15 @@ classes(__repr__, __str__, __eq__, get and set methods, monkey patching, decorat
 
 
 *******2_variables_and_memory*******
+memory variables really are
+memory management
+reference counting/garbage collection
+dynamic vs static typing
+mutability vs immutability
+shared references
+variable equality
+everything is object
+
 
 
 
