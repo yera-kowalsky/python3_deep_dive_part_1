@@ -5,6 +5,10 @@ functions
 while_loop
 try_except_finally(always runs)
 for loop (enumerate)
-classes
+classes(__repr__, __str__, __eq__, get and set methods, monkey patching, decorator(@property, setter,getter)
+
+
+*******2_variables_and_memory*******
+
 
 

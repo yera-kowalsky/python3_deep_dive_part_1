@@ -108,15 +108,42 @@ class Rectangle:
             return  NotImplemented
 
 
-r1 = Rectangle(20, 30)
+# r1 = Rectangle(20, 30)
+#
+# print(f'{r1.width} and {r1.height}')
+# r1.area()
+# print(r1.area())
+# print(r1.perimeter())
+# print(str(r1))
+# print(r1)
+# r2 = Rectangle(22, 30)
+# print(r1 is not r2)
+# print(r1 == 100)
+# print(r1 > r2)
 
-print(f'{r1.width} and {r1.height}')
-r1.area()
-print(r1.area())
-print(r1.perimeter())
-print(str(r1))
+class Newrectangle:
+    def __init__(self, width, height):
+        self._width = width
+        self._height = height
+
+    @property
+    def width(self):
+        print("getting weight")
+        return self._width
+    @width.setter
+    def width(self, width):
+        if width <= 0:
+            raise ValueError("Weight must be positive")
+        else:
+            self._width = width
+
+    @property
+    def height(self):
+        print("getting height")
+        return self._height
+
+
+r1 = Newrectangle(10,20)
+print(r1.width)
+r1.width = -100
 print(r1)
-r2 = Rectangle(22, 30)
-print(r1 is not r2)
-print(r1 == 100)
-print(r1 > r2)
