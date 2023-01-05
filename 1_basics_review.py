@@ -78,6 +78,45 @@
 #     print(i,c)
 
 
+# *************** Classes**********************
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+    def __str__(self): # magic method
+        return "This is rectangle: width = {0} and height = {1}".format(self.width, self.height)
+
+    def __repr__(self):
+        return "Rectangle: width:{0} and height:{1}".format(self.width, self.height)
+
+    def __eq__(self, other):
+        if isinstance(other, Rectangle):
+            return self.width == other.width and self.height == other.height
+        else:
+            return False
+    def __lt__(self, other):
+        if isinstance(other, Rectangle):
+            return self.area() < other.area()
+        else:
+            return  NotImplemented
 
 
+r1 = Rectangle(20, 30)
 
+print(f'{r1.width} and {r1.height}')
+r1.area()
+print(r1.area())
+print(r1.perimeter())
+print(str(r1))
+print(r1)
+r2 = Rectangle(22, 30)
+print(r1 is not r2)
+print(r1 == 100)
+print(r1 > r2)

@@ -1,9 +1,10 @@
-//////////////////////
+*******1_basics_review*********
 pep 8 style guide - https://peps.python.org/pep-0008/
 ternary operator
 functions
 while_loop
 try_except_finally(always runs)
 for loop (enumerate)
+classes
 
 
