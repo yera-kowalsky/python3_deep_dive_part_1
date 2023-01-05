@@ -51,17 +51,23 @@
 #     l.append(val)
 # print(l)
 
-a = 10
-b = 0
+# a = 10
+# b = 0
+#
+# try:
+#     a / b
+# except ZeroDivisionError:
+#     print('division by 0')
+# finally:
+#     print('this always executes')
 
-try:
-    a / b
-except ZeroDivisionError:
-    print('division by 0')
-finally:
-    print('this always executes')
-
-
+for i in range(1, 10):
+    print(i)
+    if i % 7 == 0:
+        print('multiple of 7 found')
+        break
+    else:
+        print("no multiple of 7 in the range")
 
 
 
