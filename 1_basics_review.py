@@ -61,14 +61,21 @@
 # finally:
 #     print('this always executes')
 
-for i in range(1, 10):
-    print(i)
-    if i % 7 == 0:
-        print('multiple of 7 found')
-        break
-    else:
-        print("no multiple of 7 in the range")
+# for i in range(1, 10):
+#     print(i)
+#     if i % 7 == 0:
+#         print('multiple of 7 found')
+#         break
+#     else:
+#         print("no multiple of 7 in the range")
 
+# word = 'hello'
+# for i in range(len(word)):
+#     print(i, word[i])
+#
+# word = 'hello'
+# for i, c in enumerate(word):
+#     print(i,c)
 
 
 

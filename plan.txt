@@ -4,4 +4,6 @@ ternary operator
 functions
 while_loop
 try_except_finally(always runs)
+for loop (enumerate)
+
 
