@@ -14,4 +14,5 @@ Garbage collection is implemented in Python in two ways: reference counting and 
 of an object reaches 0, reference counting garbage collection algorithm cleans up the object immediately.If you have a cycle,
 reference count doesn’t reach zero, you wait for the generational garbage collection  algorithm to run and clean the object
 """
-
+name="James"
+print(type(name))

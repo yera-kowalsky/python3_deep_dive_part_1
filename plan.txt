@@ -17,6 +17,16 @@ mutability vs immutability
 shared references
 variable equality
 everything is object
+garbage collection(gc): circular references, __del__(destorying object)
+static typing vs dynamic typing:
+"""We can use the bulit-in type() function to determine the type of the object currently referenced by a variable!!!"""
+"""Python looks up the object my_var is referencing(pointing to), and returns the type of the object at that memory location!!!"""
+Examples:
+my_var is just a reference
+my_var = 'hello'
+The variable my_var is purely a reference to a string object with value hello
+my_var = 10
+The variable my_var is pointing to an integer object with value 10
 
 
 
